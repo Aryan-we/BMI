@@ -1,4 +1,4 @@
-body{
+sbody{
     margin: 0;
     padding: 0;
     text-align: center;
@@ -53,4 +53,9 @@ button{
     width: 100px;
     border-radius: 10px;
     background-color: green;
+}
+@media(max-width:900px) {
+    div{
+        width:300px;
+    }
 }
