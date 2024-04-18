@@ -21,9 +21,9 @@ function bmi(){
             document.getElementById("value").innerHTML="Normal Weight";
         }else if(total>=25 && total<=29.9){
             document.getElementById("value").innerHTML="Overweight";
-        }else{
-           document.getElementById("value").innerHTML="Obesity";
-        }
+        }else if(total>=30){
+            document.getElementById("value").innerHTML="Obesity";
+         }
     }else{
     var bmi= w/(h*h);
     var total=bmi.toFixed(2);
@@ -34,8 +34,9 @@ function bmi(){
         document.getElementById("value").innerHTML="Normal Weight";
     }else if(total>=25 && total<=29.9){
         document.getElementById("value").innerHTML="Overweight";
-    }else{
+    }else if(total>=30){
        document.getElementById("value").innerHTML="Obesity";
     }
-}
+    }
+
 }
